@@ -7,9 +7,8 @@ def del_1_al_10():
 def pares_10_al_40():
 	i : int = 10
 	while (i <= 40):
-		if (i%2==0):
-			print(i)
-		i+=1
+		print(i)
+		i+=2
 
 def eco_10_veces():
 	i : int = 10
