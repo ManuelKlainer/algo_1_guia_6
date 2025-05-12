@@ -1,21 +1,21 @@
 """ 
-problema devolver_el_doble_si_es_par(numero : Z) {
+problema devolver_el_doble_si_es_par(numero : Z): Z {
 	asegura: {si numero es par devuelve el doble de numero}
 	asegura: {si numero es impar devuelve numero}
 }
 
-problema devolver_valor_si_es_par_sino_el_que_sigue(numero: Z) {
+problema devolver_valor_si_es_par_sino_el_que_sigue(numero: Z): Z {
 	asegura: {si numero es par devuelve numero}
 	asegura: {si numero es impar devuelve numero+1}
 }
 
-problema devolver_el_doble_si_es_multiplo3_el_triple_si_es_multiplo9(numero: Z) {
+problema devolver_el_doble_si_es_multiplo3_el_triple_si_es_multiplo9(numero: Z): Z {
 	asegura: {si numero es multiplo de 3 devuelve 2*numero}
 	asegura: {si numero es multiplo de 9 devuelve 3*numero}
 	asegura: {caso contrario devuelve el mismo numero}
 }
 
-problema lindo_nombre (nombre : String) {
+problema lindo_nombre (nombre : String): String {
 	asegura: {res="Tu nombre tiene muchas letras!" si la longitud es igual o mayor a 5}
 	asegura: {res="Tu nombre tiene menos de 5 caracteres" de lo contrario}
 }
@@ -32,24 +32,24 @@ problema vacaciones (edad : Z, sexo: Char) {
 }
 
 """
-def devolver_el_doble_si_es_par(numero : int):
+def devolver_el_doble_si_es_par(numero : int) -> int:
 	if (numero % 2 == 0):
 		return 2*numero
 	else:
 		return numero
-def devolver_valor_si_es_par_sino_el_que_sigue(numero: int):
+def devolver_valor_si_es_par_sino_el_que_sigue(numero: int) -> int:
 	if (numero % 2 == 0):
 		return numero
 	else:
 		return numero+1
-def devolver_el_doble_si_es_multiplo3_el_triple_si_es_multiplo9(numero: int):
+def devolver_el_doble_si_es_multiplo3_el_triple_si_es_multiplo9(numero: int) -> int:
 	if (numero%9==0):
 		return 3*numero
 	elif (numero%3==0):
 		return 2*numero
 	else:
 		return numero
-def lindo_nombre (nombre : str):
+def lindo_nombre (nombre : str) -> str:
 	if (len(nombre) >= 5):
 		return "Tu nombre tiene muchas letras!"
 	else:
