@@ -54,14 +54,14 @@ def lindo_nombre (nombre : str) -> str:
 		return "Tu nombre tiene muchas letras!"
 	else:
 		return "Tu nombre tiene menos de 5 caracteres"
-def elRango (numero : int):
+def elRango (numero : int) -> None:
 	if (numero < 5):
 		print("Menor a 5")
 	elif (numero >= 10 and numero <= 20):
 		print("Entre 10 y 20")
 	elif (numero > 20):
 		print("Mayor a 20")
-def vacaciones (edad : int, sexo: str):
+def vacaciones (edad : int, sexo: str) -> None:
 	if (edad < 18 or (edad >= 60 and sexo=="f")  or (edad >= 65 and sexo=="m")):
 		print("Andá de vacaciones!")
 	else:
